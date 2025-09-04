@@ -60,15 +60,15 @@ export function HeroSection() {
             <div className="flex flex-wrap justify-center gap-6 text-white/90">
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
-                <span>+977 9860329654</span>
+                <span>+977 9860329954</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5" />
-                <span>dut.kesyangtan@gmail.com</span>
+                <span>dut.ksyangtan@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-5 h-5" />
-                <span>Hetauda-11, Thanatharayng</span>
+                <span>Hetauda-11, Thanabharyang</span>
               </div>
             </div>
           </div>

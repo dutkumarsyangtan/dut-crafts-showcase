@@ -24,15 +24,15 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-primary-foreground/80">
                 <Phone className="w-4 h-4" />
-                <span className="text-sm">+977 9860329654</span>
+                <span className="text-sm">+977 9860329954</span>
               </div>
               <div className="flex items-center gap-3 text-primary-foreground/80">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">dut.kesyangtan@gmail.com</span>
+                <span className="text-sm">dut.ksyangtan@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-primary-foreground/80">
                 <MapPin className="w-4 h-4" />
-                <span className="text-sm">Hetauda-11, Thanatharayng</span>
+                <span className="text-sm">Hetauda-11, Thanabharyang</span>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ export function Footer() {
             © 2024 Dut Kumar Syangtan. Committed to social service and community development.
           </p>
           <p className="text-primary-foreground/40 text-xs mt-2">
-            Portfolio crafted with care • Available for professional opportunities
+            Bringing Ideas to Life • Let’s Build Something Amazing Together!
           </p>
         </div>
       </div>

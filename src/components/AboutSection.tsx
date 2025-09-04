@@ -34,11 +34,11 @@ export function AboutSection() {
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="text-center p-4 rounded-lg bg-primary/5 hover:bg-primary/10 transition-colors">
-                  <div className="text-3xl font-bold text-primary mb-2">80+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">3+</div>
                   <div className="text-sm text-muted-foreground">Projects Completed</div>
                 </div>
                 <div className="text-center p-4 rounded-lg bg-primary/5 hover:bg-primary/10 transition-colors">
-                  <div className="text-3xl font-bold text-primary mb-2">30+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">50+</div>
                   <div className="text-sm text-muted-foreground">Communities Served</div>
                 </div>
               </div>

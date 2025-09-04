@@ -10,7 +10,7 @@ const testimonials = [
     rating: 5,
     testimonial: "Dut Kumar has been an exceptional team member with outstanding dedication to social work over the past 8+ years. His technical expertise in KoboToolbox and data automation has revolutionized our project documentation. His ability to integrate digital solutions with field work is remarkable and his leadership in technical training is invaluable to our organization.",
     email: "jhabindra.cwin@gmail.com",
-    phone: "+977 9855028630"
+    phone: "+977 9855029630"
   },
   {
     name: "Sarah Johnson",

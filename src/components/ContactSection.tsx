@@ -17,7 +17,7 @@ export function ContactSection() {
   };
 
   const handlePhoneClick = () => {
-    window.location.href = 'tel:+9779860329654';
+    window.location.href = 'tel:+9779860329954';
   };
 
   return (
@@ -53,7 +53,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <div className="text-sm text-muted-foreground">Phone</div>
-                      <div className="font-medium text-foreground">+977 9860329654</div>
+                      <div className="font-medium text-foreground">+977 9860329954</div>
                     </div>
                   </div>
 
@@ -66,7 +66,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <div className="text-sm text-muted-foreground">Email</div>
-                      <div className="font-medium text-foreground">dut.kesyangtan@gmail.com</div>
+                      <div className="font-medium text-foreground">dut.ksyangtan@gmail.com</div>
                     </div>
                   </div>
 
