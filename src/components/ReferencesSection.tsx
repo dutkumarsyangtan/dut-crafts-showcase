@@ -66,7 +66,7 @@ export function ReferencesSection() {
               <div className="p-6 rounded-lg bg-primary/5 border-l-4 border-primary">
                 <h4 className="font-semibold text-foreground mb-3">About the Reference</h4>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Mr. Jhabindra Gyawali has been my direct supervisor at CWIN-Nepal for over 5 years. 
+                  Mr. Jhabindra Gyawali has been my direct supervisor at CWIN-Nepal for over 8+ years. 
                   He can provide comprehensive insights into my work performance, technical expertise in digital tools, 
                   and contributions to various social work projects and community development initiatives.
                 </p>

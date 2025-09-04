@@ -23,7 +23,7 @@ const experiences = [
       "Streamlined documentation processes with 40% efficiency gain",
       "Automated data collection reducing manual work by 60%",
       "Created 15+ interactive Excel dashboards",
-      "Trained 25+ staff members on KoboToolbox usage"
+      "Trained 15+ staff members on KoboToolbox usage"
     ]
   },
   {
@@ -44,7 +44,7 @@ const experiences = [
       "Successfully managed 40+ projects with digital tracking",
       "Achieved 95% on-time delivery rate using project dashboards",
       "Reduced project costs by 15% through process automation",
-      "Implemented KoboToolbox across 10+ project sites"
+      "Implemented KoboToolbox across 3+ project sites"
     ]
   },
   {
@@ -64,7 +64,7 @@ const experiences = [
     ],
     achievements: [
       "Digitized data collection for 800+ families in rural communities",
-      "Established 15+ digital community networks",
+      "Established 5+ digital community networks",
       "Created automated reporting systems",
       "Trained communities on digital tool usage"
     ]

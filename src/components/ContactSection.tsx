@@ -1,12 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Download, ExternalLink } from "lucide-react";
+import { Mail, Phone, MapPin, Download } from "lucide-react";
 
 export function ContactSection() {
   const handleDownloadCV = () => {
-    const link = document.createElement('a');
-    link.href = '/lovable-uploads/85f2aafd-71ba-46ee-971c-52d162637967.png';
-    link.download = 'Dut-Kumar-Syangtan-CV.png';
+    const link = document.createElement("a");
+    link.href = "/dks-uploads/Resume.pdf";
+    link.download = "Dut-Kumar-Syangtan-CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -29,8 +29,9 @@ export function ContactSection() {
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to collaborate on meaningful projects? Let's discuss how my experience 
-            in social work and project management can contribute to your organization's goals.
+            Ready to collaborate on meaningful projects? Let's discuss how my
+            experience in social work and project management can contribute to
+            your organization's goals.
           </p>
         </div>
 
@@ -42,7 +43,7 @@ export function ContactSection() {
                 <h3 className="text-2xl font-bold text-foreground mb-6">
                   Contact Information
                 </h3>
-                
+
                 <div className="space-y-6">
                   <div 
                     className="flex items-center gap-4 p-4 rounded-lg bg-muted/50 hover:bg-muted/70 transition-all cursor-pointer group"
@@ -76,13 +77,17 @@ export function ContactSection() {
                     </div>
                     <div>
                       <div className="text-sm text-muted-foreground">Location</div>
-                      <div className="font-medium text-foreground">Hetauda-11, Thanatharayng</div>
+                      <div className="font-medium text-foreground">
+                        Hetauda-11, Thanabharyang
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-8 pt-6 border-t border-border">
-                  <h4 className="font-semibold text-foreground mb-4">Best Time to Contact</h4>
+                  <h4 className="font-semibold text-foreground mb-4">
+                    Best Time to Contact
+                  </h4>
                   <p className="text-sm text-muted-foreground">
                     Monday to Friday, 9:00 AM - 6:00 PM (Nepal Time)
                     <br />
@@ -100,7 +105,7 @@ export function ContactSection() {
                 </h3>
 
                 <div className="space-y-4 mb-8">
-                  <Button 
+                  <Button
                     onClick={handleDownloadCV}
                     className="w-full justify-start h-auto p-4 hover:scale-105 transition-all"
                     size="lg"
@@ -108,11 +113,13 @@ export function ContactSection() {
                     <Download className="w-5 h-5 mr-3" />
                     <div className="text-left">
                       <div className="font-medium">Download CV</div>
-                      <div className="text-xs opacity-90">Complete professional resume</div>
+                      <div className="text-xs opacity-90">
+                        Complete professional resume
+                      </div>
                     </div>
                   </Button>
 
-                  <Button 
+                  <Button
                     onClick={handleEmailClick}
                     variant="outline"
                     className="w-full justify-start h-auto p-4 hover:scale-105 transition-all"
@@ -125,7 +132,7 @@ export function ContactSection() {
                     </div>
                   </Button>
 
-                  <Button 
+                  <Button
                     onClick={handlePhoneClick}
                     variant="outline"
                     className="w-full justify-start h-auto p-4 hover:scale-105 transition-all"
@@ -140,7 +147,9 @@ export function ContactSection() {
                 </div>
 
                 <div className="p-4 rounded-lg bg-primary/5 border-l-4 border-primary">
-                  <h4 className="font-semibold text-foreground mb-2">Looking for Opportunities</h4>
+                  <h4 className="font-semibold text-foreground mb-2">
+                    Looking for Opportunities
+                  </h4>
                   <p className="text-sm text-muted-foreground">
                     Open to new challenges in social work, project management, 
                     and community development roles.
@@ -178,5 +187,5 @@ export function ContactSection() {
         </div>
       </div>
     </section>
-  );
-}
+  ); // <-- closes return
+} // <-- closes function

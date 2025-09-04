@@ -5,7 +5,7 @@ export function HeroSection() {
   const handleDownloadCV = () => {
     const link = document.createElement('a');
     link.href = '/lovable-uploads/85f2aafd-71ba-46ee-971c-52d162637967.png';
-    link.download = 'Dut-Kumar-Syangtan-CV.png';
+    link.download = 'Dut-Kumar-Syangtan.png';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
