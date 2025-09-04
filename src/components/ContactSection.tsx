@@ -13,7 +13,7 @@ export function ContactSection() {
   };
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:dut.kesyangtan@gmail.com';
+    window.location.href = 'mailto:dut.ksyangtan@gmail.com';
   };
 
   const handlePhoneClick = () => {

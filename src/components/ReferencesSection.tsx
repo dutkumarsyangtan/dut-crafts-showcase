@@ -38,7 +38,7 @@ export function ReferencesSection() {
                   </div>
                   <div>
                     <div className="text-sm text-muted-foreground">Phone</div>
-                    <div className="font-medium text-foreground">+977 9855028630</div>
+                    <div className="font-medium text-foreground">+977 9855029630</div>
                   </div>
                 </div>
 

@@ -34,7 +34,7 @@ export function EducationSection() {
                     </div>
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Running</span>
+                      <span>Completed</span>
                     </div>
                   </div>
                   <Badge variant="secondary" className="w-fit">
