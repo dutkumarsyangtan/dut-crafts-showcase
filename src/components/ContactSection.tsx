@@ -13,7 +13,7 @@ export function ContactSection() {
   };
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:dut.ksyangtan@gmail.com';
+    window.location.href = "mailto:dut.ksyangtan@gmail.com";
   };
 
   const handlePhoneClick = () => {
@@ -35,6 +35,7 @@ export function ContactSection() {
           </p>
         </div>
 
+<<<<<<< HEAD
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Contact Information */}
@@ -56,6 +57,22 @@ export function ContactSection() {
                       <div className="text-sm text-muted-foreground">Phone</div>
                       <div className="font-medium text-foreground">+977 9860329954</div>
                     </div>
+=======
+        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 mb-12">
+          {/* Contact Information */}
+          <Card className="card-hover-effect h-fit">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-bold text-foreground mb-6">
+                Contact Information
+              </h3>
+              <div className="space-y-6">
+                <div
+                  className="flex items-center gap-4 p-4 rounded-lg bg-muted/50 hover:bg-muted/70 transition-all cursor-pointer group"
+                  onClick={handlePhoneClick}
+                >
+                  <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
+                    <Phone className="w-6 h-6 text-primary" />
+>>>>>>> 6d17e67 (Save current changes before pull)
                   </div>
 
                   <div 
@@ -159,6 +176,7 @@ export function ContactSection() {
             </Card>
           </div>
 
+<<<<<<< HEAD
           {/* Professional Summary Card */}
           <Card className="card-hover-effect">
             <CardContent className="p-8 text-center">
@@ -170,6 +188,78 @@ export function ContactSection() {
                   With 8+ years of experience in social work, project management, digital automation, and community development, 
                   I bring a unique combination of technical expertise and compassionate leadership to every project. 
                   Let's discuss how my skills in KoboToolbox, Google Apps Scripts, and advanced Excel can contribute to your organization's digital transformation and social impact goals.
+=======
+              <div className="mt-8 pt-6 border-t border-border">
+                <h4 className="font-semibold text-foreground mb-4">
+                  Best Time to Contact
+                </h4>
+                <p className="text-sm text-muted-foreground">
+                  Monday to Friday, 9:00 AM - 6:00 PM (Nepal Time)
+                  <br />
+                  Response time: Within 24 hours
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Quick Actions */}
+          <Card className="card-hover-effect h-fit">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-bold text-foreground mb-6">
+                Quick Actions
+              </h3>
+              <div className="space-y-4 mb-8">
+                <Button
+                  onClick={handleDownloadCV}
+                  className="w-full justify-start h-auto p-4 hover:scale-105 transition-all"
+                  size="lg"
+                >
+                  <Download className="w-5 h-5 mr-3" />
+                  <div className="text-left">
+                    <div className="font-medium">Download CV</div>
+                    <div className="text-xs opacity-90">
+                      Complete professional resume
+                    </div>
+                  </div>
+                </Button>
+
+                <Button
+                  onClick={handleEmailClick}
+                  variant="outline"
+                  className="w-full justify-start h-auto p-4 hover:scale-105 transition-all"
+                  size="lg"
+                >
+                  <Mail className="w-5 h-5 mr-3" />
+                  <div className="text-left">
+                    <div className="font-medium">Send Email</div>
+                    <div className="text-xs opacity-70">
+                      Direct email communication
+                    </div>
+                  </div>
+                </Button>
+
+                <Button
+                  onClick={handlePhoneClick}
+                  variant="outline"
+                  className="w-full justify-start h-auto p-4 hover:scale-105 transition-all"
+                  size="lg"
+                >
+                  <Phone className="w-5 h-5 mr-3" />
+                  <div className="text-left">
+                    <div className="font-medium">Call Now</div>
+                    <div className="text-xs opacity-70">Direct phone conversation</div>
+                  </div>
+                </Button>
+              </div>
+
+              <div className="p-4 rounded-lg bg-primary/5 border-l-4 border-primary">
+                <h4 className="font-semibold text-foreground mb-2">
+                  Looking for Opportunities
+                </h4>
+                <p className="text-sm text-muted-foreground">
+                  Open to new challenges in social work, project management, 
+                  and community development roles.
+>>>>>>> 6d17e67 (Save current changes before pull)
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <Button onClick={handleEmailClick} size="lg">
