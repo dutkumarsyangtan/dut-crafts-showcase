@@ -3,9 +3,9 @@ import { Download, Mail, MapPin, Phone } from "lucide-react";
 
 export function HeroSection() {
   const handleDownloadCV = () => {
-    const link = document.createElement('a');
-    link.href = '/lovable-uploads/85f2aafd-71ba-46ee-971c-52d162637967.png';
-    link.download = 'Dut-Kumar-Syangtan.png';
+    const link = document.createElement("a");
+    link.href = "/dks-uploads/Dut-Kumar-Syangtan.png"; // Fixed path
+    link.download = "Dut-Kumar-Syangtan.png";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -25,7 +25,7 @@ export function HeroSection() {
             <div className="relative inline-block">
               <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
                 <img
-                  src="/lovable-uploads/131c2fe6-fce3-4262-947c-a3bd7e1c6656.png"
+                  src="/dks-uploads/Dut-Kumar-Syangtan.png"
                   alt="Dut Kumar Syangtan"
                   className="w-full h-full object-cover"
                 />

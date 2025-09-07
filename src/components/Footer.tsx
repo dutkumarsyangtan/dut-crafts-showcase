@@ -51,7 +51,7 @@ export function Footer() {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/60 text-sm">
-            © 2024 Dut Kumar Syangtan. Committed to social service and community development.
+            © 2025 Dut Kumar Syangtan. Committed to social service and community development.
           </p>
           <p className="text-primary-foreground/40 text-xs mt-2">
             Bringing Ideas to Life • Let’s Build Something Amazing Together!
