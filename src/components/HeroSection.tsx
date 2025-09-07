@@ -4,8 +4,8 @@ import { Download, Mail, MapPin, Phone } from "lucide-react";
 export function HeroSection() {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/dks-uploads/Dut-Kumar-Syangtan.png"; // Fixed path
-    link.download = "Dut-Kumar-Syangtan.png";
+    link.href = "/dks-uploads/Dut-KumarSyangtan.png"; // Fixed path
+    link.download = "Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
