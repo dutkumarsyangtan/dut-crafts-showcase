@@ -28,10 +28,7 @@ export function AboutSection() {
               </p>
 
               <p className="text-lg leading-relaxed text-gray-800 dark:text-gray-200 mb-6">
-                As a caring professional with expertise in case management, digital tools, and client advocacy,
-                I am committed to helping individuals achieve their goals by connecting them
-                with necessary resources and leveraging technology for efficient solutions,
-                making me a valuable addition to any organization.
+                Client-focused, tech-savvy, and results-oriented, I turn challenges into solutions by connecting people with the resources they need. My expertise in case management and advocacy ensures both efficiency and impact, making me a high-value addition to any team.
               </p>
 
               {/* Stats */}

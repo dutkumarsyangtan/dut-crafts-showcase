@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Download, Mail, MapPin, Phone } from "lucide-react";
+import { Download, Mail, MapPin, Phone, X } from "lucide-react";
 
 export function HeroSection() {
   const [showMessage, setShowMessage] = useState(false);
+  const [isImageOpen, setIsImageOpen] = useState(false);
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
@@ -14,24 +15,32 @@ export function HeroSection() {
 
   const handleEmojiClick = () => {
     setShowMessage(true);
-    setTimeout(() => setShowMessage(false), 3000); // Hide after 3 seconds
+    setTimeout(() => setShowMessage(false), 3000);
+  };
+
+  const handleImageClick = () => {
+    setIsImageOpen(true);
+  };
+
+  const handleCloseImage = () => {
+    setIsImageOpen(false);
   };
 
   return (
-    <section className="
-      relative min-h-screen flex items-center justify-center
-      bg-blue-200 dark:bg-gradient-to-br dark:from-black dark:via-gray-800 dark:to-yellow-900
-      transition-colors duration-1000
-      overflow-hidden
-    ">
+    <section className="relative min-h-screen flex items-center justify-center bg-blue-200 dark:bg-gradient-to-br dark:from-black dark:via-gray-800 dark:to-yellow-900 transition-colors duration-1000 overflow-hidden">
+      
       <div className="absolute inset-0 opacity-10 bg-white/10 dark:bg-black/20"></div>
 
       <div className="container mx-auto relative z-10 text-center px-4">
         <div className="max-w-4xl mx-auto">
+          
           {/* Profile Image */}
           <div className="mb-8 transform transition-all duration-700 scale-95 hover:scale-100 relative">
             <div className="relative inline-block">
-              <div className="w-64 h-64 mx-auto rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
+              <div
+                className="w-64 h-64 mx-auto rounded-full overflow-hidden border-4 border-white/20 shadow-2xl cursor-pointer"
+                onClick={handleImageClick}
+              >
                 <img
                   src="/dks-uploads/Dut-Kumar-Syangtan.png"
                   alt="Dut Kumar Syangtan"
@@ -39,7 +48,7 @@ export function HeroSection() {
                 />
               </div>
 
-              {/* Waving Hand Emoji */}
+              {/* Waving Hand Emoji - stays at bottom-right of picture */}
               <div
                 className="absolute -bottom-2 -right-2 w-12 h-12 bg-white rounded-full flex items-center justify-center cursor-pointer animate-bounce"
                 onClick={handleEmojiClick}
@@ -49,16 +58,7 @@ export function HeroSection() {
 
               {/* Pop-up Hello Message */}
               {showMessage && (
-                <div className="
-                  absolute -top-14 -right-4
-                  bg-yellow-400 dark:bg-yellow-600
-                  text-black dark:text-white
-                  font-extrabold text-lg md:text-xl
-                  px-4 py-2 rounded-xl shadow-2xl
-                  animate-pop
-                  whitespace-nowrap
-                  z-50
-                ">
+                <div className="absolute -top-14 -right-4 bg-yellow-400 dark:bg-yellow-600 text-black dark:text-white font-extrabold text-lg md:text-xl px-4 py-2 rounded-xl shadow-2xl animate-pop whitespace-nowrap z-50">
                   Hello! Nice to meet you 👋
                 </div>
               )}
@@ -77,10 +77,10 @@ export function HeroSection() {
 
           {/* Tagline */}
           <div className="mb-8">
-            <p className="text-lg md:text-xl text-gray-800 dark:text-gray-200 max-w-2xl mx-auto leading-relaxed">
-              Passionate professional with 8+ years of expertise in social work, project management, 
-              and community development. Specialized in digital tools and data management solutions 
-              for creating meaningful impact through innovative approaches.
+            <p className="text-lg md:text-xl text-gray-800 dark:text-gray-200 max-w-2xl mx-auto leading-relaxed text-justify">
+              Results-driven professional with over 8 years of experience in social work, project management, and community development. 
+              Expert in leveraging digital tools and data management solutions to design and implement innovative programs that create measurable, meaningful impact. 
+              Recognized for delivering strategic solutions, fostering community engagement, and driving successful project outcomes.
             </p>
           </div>
 
@@ -113,12 +113,25 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
+      {/* Fullscreen Image Modal */}
+      {isImageOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
+          onClick={handleCloseImage} // click outside to close
+        >
+          <button
+            className="absolute top-6 right-6 text-white text-3xl z-50"
+            onClick={(e) => { e.stopPropagation(); handleCloseImage(); }}
+          >
+            <X />
+          </button>
+          <img
+            src="/dks-uploads/Dut-Kumar-Syangtan.png"
+            alt="Dut Kumar Syangtan Full"
+            className="max-w-full max-h-full rounded-lg shadow-2xl"
+          />
         </div>
-      </div>
+      )}
 
       {/* Pop-up Animation */}
       <style jsx>{`
